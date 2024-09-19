@@ -1,19 +1,28 @@
+<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>My Affirmations</title>
+  <title>Chat Interface - Prompt Engineering</title>
+  <link rel="stylesheet" href="/style.css" />
 </head>
 
 <body>
-  <main>
-    <h1><span>My Affirmations</span></h1>
-    <section class="text">
-      <h3 id="affirmation">Loading...</h3>
+  <main class="chat-container">
+    <header>
+      <h1>Prompt Engineering Chat</h1>
+    </header>
+    
+    <section id="chatbox" class="chatbox">
+      <!-- Chat bubbles will be dynamically inserted here -->
     </section>
-    <button id="getNewAffirmation" disabled>Another Please</button>
+
+    <section class="input-container">
+      <input id="userInput" type="text" placeholder="Type your message..." />
+      <button id="sendMessage">Send</button>
+    </section>
   </main>
+
   <script type="module" src="/main.js"></script>
 </body>
-
 </html>
